@@ -669,6 +669,30 @@ body {
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
 
+section.about {
+  background-image: url(../img/about-bg.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  section.about h2 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: -170px;
+    text-align: right; }
+  section.about p {
+    margin-left: -110px;
+    text-align: right; }
+
+@media (max-width: 640px) {
+  section.about h2 {
+    margin-left: 0px;
+    font-size: 26px; }
+  section.about p {
+    margin-left: 23px;
+    font-size: 18px; } }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -713,17 +737,17 @@ body {
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px;
-  background: pink; }
+  margin: 0 10px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px;
-  background: honeydew; }
+  margin: 0 10px; }
 
 .col-50 {
-  width: 50%;
-  background: yellow; }
+  width: 50%; }
+
+.push-right {
+  margin-left: 330px; }
 
 @media (max-width: 640px) {
   .home-section .flex {
@@ -731,4 +755,11 @@ body {
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; } }
+    width: auto; }
+  .push-right {
+    margin-left: 115px; } }
+
+.home-lead {
+  font-size: 30px;
+  line-height: 1.1;
+  color: black; }
