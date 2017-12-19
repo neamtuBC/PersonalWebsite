@@ -1,0 +1,44 @@
+section.youtube
+  background:
+    image: url(../img/youtube-bg.jpg)
+    position: center
+    size: cover
+  color: white
+
+  .home-cta
+    color: #e20a0a
+
+  .flex-video
+    box-shadow: 0px 4px 40px 3px rgba(0,0,0,0.5)
+
+  .col-1
+    position: relative
+    width: 300px
+    height: 320px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .video-strip
+      position: absolute
+      top: 0
+      margin: -50px 0
+      width: 100%
+      height: calc(100% + 100px)
+      background:
+        image: url(../img/video-strip.png)
+        position: center 0px
+        repeat: repeat-y
+        size: 70%
+
+@media (max-width: 640px)
+  .col-1
+    width: auto !important
+    height: auto !important
+    .home-lead
+      font-size: 18px
+      margin-top: 20px
+    .home-cta
+      font-size: 26px
+    .video-strip
+      display: none
