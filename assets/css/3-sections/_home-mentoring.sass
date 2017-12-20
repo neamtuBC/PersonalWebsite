@@ -25,6 +25,9 @@ section.mentoring
         height: calc(100% + 100px)
         padding: 0
         color: black
+        position: relative
+        top: 0px
+        transition: all 0.3s ease-in-out
 
         .face
           height: 80px
@@ -36,6 +39,7 @@ section.mentoring
           margin-bottom: 20px
           box-shadow: 0px 4px 8px rgba(0,0,0,0.4)
           position: relative
+          cursor: pointer
 
           &:last-child
             margin-bottom: 0px
@@ -53,10 +57,10 @@ section.mentoring
             border-radius: 50px 50px 50px 5px
             border: 3px solid black
             pointer-events: none
-            transition: all 0.2s cubic-bezier(0, -0.56, 0, 1.96)
+            transition: all 0.4s cubic-bezier(0, -0.56, 0, 1.96)
             transform: scale(0)
             transform-origin: bottom left
 
-          &:hover .bubble
+          &.has-bubble-open .bubble
             opacity: 1
             transform: scale(1)

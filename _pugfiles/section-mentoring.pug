@@ -1,22 +1,14 @@
-mixin face
-  li.face(style="background-image: url(http://fillmurray.com/80/80);")
+mixin face("image","words","name")
+  li.face(style="background-image: url(#{image});")
     .bubble
-      p 	Imi place ca pot sa vorbesc cu Bogdan despre cum sa imi gasesc fata cu benzina pentru ca se pricepe si eu urmeaza sa imi cumpar o Dacia 1300 si benzina este scuma in Romania si nu o sa ma pot plimba. 
-      cite - Marius Iordache
+      p #{words}
+      cite - #{name}
 
 section.mentoring
   .flex.flex--center
     .col-1
       ul.faces
-        +face
-        +face
-        li.face.has-bubble-open(style="background-image: url(http://fillmurray.com/80/80);")
-          .bubble
-            p 	Imi place ca pot sa vorbesc cu Bogdan despre cum sa imi gasesc fata cu benzina pentru ca se pricepe si eu urmeaza sa imi cumpar o Dacia 1300 si benzina este scuma in Romania si nu o sa ma pot plimba. 
-            cite - Marius Iordache
-        +face
-        +face
-        +face
+        +face("./assets/img/profile-image.jpg", "Imi place ca pot sa vorbesc cu Bogdan despre cum sa imi gasesc fata cu benzina pentru ca se pricepe si eu urmeaza sa imi cumpar o Dacia 1300 si benzina este scuma in Romania si nu o sa ma pot plimba.", "Marius Urzica" )
     .col-1
       p.home-lead.outdented ...Devenind mentor pentru oameni ca tine...
       a(href="").home-cta Intreaba-ma orice
