@@ -1,5 +1,6 @@
 mixin face(image,name)
-  li.face(style="background-image: url(./assets/img/profile-image.jpg);")
+  -var test = "background-image: url("+image+");"
+  li.face(style = test)
     .bubble
       p Lorem ipsum dolor sit amet, id dicunt omnium mea, eu ridens luptatum vix. Eum augue sensibus an, has at alia exerci fabulas. Graeco eligendi pro et, te eam harum ceteros.
       cite - #{name}
@@ -9,10 +10,10 @@ section.mentoring
     .col-1
       ul.faces
         +face('./assets/img/profile-image.jpg','Costin Dumbraveanu')
-        +face('./assets/img/profile-image.jpg','Marin Schioapatescu')
-        +face('./assets/img/profile-image.jpg','Darius Bota')
-        +face('./assets/img/profile-image.jpg','Bogdan Maciulescuu')
-        +face('./assets/img/profile-image.jpg','Marius Iordache')
+        +face('./assets/img/profile-image1.jpg','Marin Schioapatescu')
+        +face('./assets/img/profile-image2.jpg','Darius Bota')
+        +face('./assets/img/profile-image-3.jpg','Bogdan Maciulescuu')
+        +face('./assets/img/profile-image-4.jpg','Marius Iordache')
     .col-1
       p.home-lead.outdented ...Devenind mentor pentru oameni ca tine...
       a(href="").home-cta Intreaba-ma orice
