@@ -797,10 +797,12 @@ section.mentoring {
       padding: 0;
       color: black;
       position: relative;
-      top: 0px;
+      top: 800px;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+      section.mentoring .flex .col-1 .faces.launched {
+        top: 0px; }
       section.mentoring .flex .col-1 .faces .face {
         height: 80px;
         width: 80px;

@@ -1,14 +1,18 @@
-mixin face("image","words","name")
-  li.face(style="background-image: url(#{image});")
+mixin face(image,name)
+  li.face(style="background-image: url(./assets/img/profile-image.jpg);")
     .bubble
-      p #{words}
+      p Lorem ipsum dolor sit amet, id dicunt omnium mea, eu ridens luptatum vix. Eum augue sensibus an, has at alia exerci fabulas. Graeco eligendi pro et, te eam harum ceteros.
       cite - #{name}
 
 section.mentoring
   .flex.flex--center
     .col-1
       ul.faces
-        +face("./assets/img/profile-image.jpg", "Imi place ca pot sa vorbesc cu Bogdan despre cum sa imi gasesc fata cu benzina pentru ca se pricepe si eu urmeaza sa imi cumpar o Dacia 1300 si benzina este scuma in Romania si nu o sa ma pot plimba.", "Marius Urzica" )
+        +face('./assets/img/profile-image.jpg','Costin Dumbraveanu')
+        +face('./assets/img/profile-image.jpg','Marin Schioapatescu')
+        +face('./assets/img/profile-image.jpg','Darius Bota')
+        +face('./assets/img/profile-image.jpg','Bogdan Maciulescuu')
+        +face('./assets/img/profile-image.jpg','Marius Iordache')
     .col-1
       p.home-lead.outdented ...Devenind mentor pentru oameni ca tine...
       a(href="").home-cta Intreaba-ma orice
