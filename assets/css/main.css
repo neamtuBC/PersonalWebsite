@@ -577,7 +577,7 @@ body {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/logo.svg);
+    background-image: url(assets/img/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: contain;
