@@ -783,13 +783,13 @@ section.mentoring {
   background-position: center;
   color: white;
   overflow: hidden; }
-  section.mentoring .flex .col-1 {
+  section.mentoring .col-1 {
     width: 300px; }
-    section.mentoring .flex .col-1 .home-lead {
+    section.mentoring .col-1 .home-lead {
       margin-top: 250px; }
-    section.mentoring .flex .col-1 .home-cta {
+    section.mentoring .col-1 .home-cta {
       color: #e20a0a; }
-    section.mentoring .flex .col-1 .faces {
+    section.mentoring .col-1 .faces {
       list-style: none;
       margin: -50px 0;
       height: -webkit-calc(100% + 100px);
@@ -801,9 +801,9 @@ section.mentoring {
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      section.mentoring .flex .col-1 .faces.launched {
+      section.mentoring .col-1 .faces.launched {
         top: 0px; }
-      section.mentoring .flex .col-1 .faces .face {
+      section.mentoring .col-1 .faces .face {
         height: 80px;
         width: 80px;
         -webkit-background-size: cover;
@@ -816,9 +816,13 @@ section.mentoring {
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
         position: relative;
         cursor: pointer; }
-        section.mentoring .flex .col-1 .faces .face:last-child {
-          margin-bottom: 0px; }
-        section.mentoring .flex .col-1 .faces .face .bubble {
+        section.mentoring .col-1 .faces .face.back-btn {
+          background-image: url(../img/back.png);
+          -webkit-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+                  transform: scale(1.2);
+          display: none; }
+        section.mentoring .col-1 .faces .face .bubble {
           opacity: 0;
           position: absolute;
           left: 100%;
@@ -840,11 +844,35 @@ section.mentoring {
           -webkit-transform-origin: bottom left;
               -ms-transform-origin: bottom left;
                   transform-origin: bottom left; }
-        section.mentoring .flex .col-1 .faces .face.has-bubble-open .bubble {
+        section.mentoring .col-1 .faces .face.has-bubble-open .bubble {
           opacity: 1;
           -webkit-transform: scale(1);
               -ms-transform: scale(1);
                   transform: scale(1); }
+
+@media (max-width: 640px) {
+  section.mentoring .col-1 .faces {
+    top: 200px;
+    left: 0px;
+    margin: 0px;
+    width: 785px; }
+    section.mentoring .col-1 .faces.launched {
+      top: 235px; }
+    section.mentoring .col-1 .faces .face {
+      display: inline-block;
+      margin-right: 50px; }
+      section.mentoring .col-1 .faces .face.has-bubble-open {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+      section.mentoring .col-1 .faces .face.back-btn {
+        display: inline-block; }
+      section.mentoring .col-1 .faces .face .bubble {
+        width: 220px;
+        left: 20%;
+        bottom: 100%;
+        margin-bottom: 10px;
+        padding: 20px; } }
 
 .home-wrap {
   display: -webkit-box;
@@ -917,6 +945,9 @@ section.mentoring {
   line-height: 1.1; }
   .home-lead.outdented {
     text-indent: -0.7em; }
-    @media (max-width: 640px) {
-      .home-lead.outdented {
-        text-indent: 0; } }
+
+@media (max-width: 640px) {
+  .home-lead {
+    text-align: center; }
+    .home-lead.outdented {
+      text-indent: 0; } }
