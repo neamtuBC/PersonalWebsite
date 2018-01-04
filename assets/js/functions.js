@@ -1,7 +1,15 @@
 $(function(){
   mentoringBubbleClick();
   smoothScrool(1000);
+  mobileNav();
 });
+
+function mobileNav(){
+  $('.mobile-nav-toggle').on('click', function() {
+    $(this).toggleClass('is-open');
+    $('.mobile-nav').toggleClass('is-open');
+  });
+}
 
 function smoothScrool (duration){
     $('a[href^="#"]').on('click', function(event) {

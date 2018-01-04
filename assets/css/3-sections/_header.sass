@@ -72,24 +72,24 @@
       span:after
         top: -17px
 
-      &:is-open span
+      &.is-open span
         background: transparent
 
-      &:is-open span:before,
-      &:is-open span:after
+      &.is-open span:before,
+      &.is-open span:after
         transform-origin: center
         transform: rotate(45deg)
         top: 0
 
-      &:is-open span::before
+      &.is-open span::before
         transform: rotate(-45deg)
 
   //mobile navigation
   .mobile-nav
-    display: none
+
     position: absolute
     width: 100%
-    background: white
+    background: fade-out(white,0.05)
     padding: 30px 0 20px
     transform: translateY(-100%)
     transition: all 0.3s ease-in-out
