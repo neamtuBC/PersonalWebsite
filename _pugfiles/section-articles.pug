@@ -1,0 +1,29 @@
+mixin thumb(image)
+  -var image = "background-image: url("+image+");"
+  a(href="" style = image).article-thumb
+    .article-meta
+      .name Article Name
+      .date Dec 12, 1995
+
+section.articles#articles
+  .flex.flex--center
+                  
+    .col-50
+      .article-wrap
+        +thumb('./assets/img/art1.jpg')
+        +thumb('./assets/img/art2.jpg')
+        +thumb('./assets/img/art3.jpg')
+        +thumb('./assets/img/art4.jpg')
+        +thumb('./assets/img/art5.jpg')
+        +thumb('./assets/img/art6.jpg')
+        +thumb('./assets/img/art7.jpg')
+        +thumb('./assets/img/art3.jpg')
+        +thumb('./assets/img/art4.jpg')
+        +thumb('./assets/img/art5.jpg')
+        +thumb('./assets/img/art1.jpg')
+        +thumb('./assets/img/art2.jpg')
+        
+    .col-50.flex.flex--center.order-first
+      .col-1
+        p.home-lead.outdented ...Scriind si gandind cele mai interesante articole...
+        a(href="").home-cta Vezi articolele
