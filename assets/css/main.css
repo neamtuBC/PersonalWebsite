@@ -1132,6 +1132,15 @@ section.notes {
       font-size: 12px;
       left: 5px; }
 
+section.contact {
+  background-color: #f00c0c;
+  text-align: center; }
+  section.contact h2 {
+    color: #7e0000; }
+    @media (max-width: 520px) {
+      section.contact h2 {
+        font-size: 32px; } }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
