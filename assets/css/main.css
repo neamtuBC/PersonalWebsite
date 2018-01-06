@@ -984,6 +984,8 @@ section.design {
   background-image: url(../img/design-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
   padding: 0px !important; }
   section.design .col-50 {
     background-color: rgba(0, 0, 0, 0.8); }
@@ -1039,6 +1041,96 @@ section.design {
   section.design .cf {
     clear: both;
     margin-bottom: 20px; }
+
+section.notes {
+  background-image: url(../img/notes-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+  section.notes .home-lead {
+    text-align: center;
+    color: black; }
+  section.notes .col-1 {
+    padding-left: 30px;
+    font-size: 18;
+    font-style: italic;
+    line-height: 1.8; }
+    section.notes .col-1:first-child {
+      padding-left: 0;
+      padding-right: 30px;
+      text-align: right;
+      border-right: solid 2px black; }
+    @media (max-width: 640px) {
+      section.notes .col-1 {
+        padding: 0 10px; }
+        section.notes .col-1:first-child {
+          padding: 0 10px;
+          text-align: left;
+          border: none; } }
+  section.notes a {
+    color: black;
+    text-decoration: underline; }
+  section.notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  section.notes p {
+    margin: 0; }
+  section.notes .form-display {
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid white;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px 0; }
+    @media (max-width: 590px) {
+      section.notes .form-display {
+        display: block; } }
+    section.notes .form-display .mc-field-group {
+      position: relative;
+      -webkit-box-flex: 2;
+      -webkit-flex: 2;
+          -ms-flex: 2;
+              flex: 2; }
+      section.notes .form-display .mc-field-group:first-child {
+        border-right: 4px white solid; }
+        @media (max-width: 590px) {
+          section.notes .form-display .mc-field-group:first-child {
+            border-right: none;
+            border-bottom: 4px white solid; } }
+    section.notes .form-display input {
+      position: relative;
+      border: 0;
+      background: none;
+      padding: 0;
+      display: block;
+      height: 50px;
+      width: 100%;
+      padding: 0 10px;
+      font-size: 18px; }
+      section.notes .form-display input.button {
+        line-height: 0px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        background: white;
+        color: #f00c0c;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: none;
+        padding: 0 15px; }
+      section.notes .form-display input:focus {
+        outline: none; }
+    section.notes .form-display label {
+      position: absolute;
+      z-index: 2;
+      font-size: 12px;
+      left: 5px; }
 
 .home-wrap {
   display: -webkit-box;

@@ -1,0 +1,90 @@
+section.notes
+  background:
+    image: url(../img/notes-bg.jpg)
+    repeat: no-repeat
+    size: cover
+    position: center
+
+  .home-lead
+    text-align: center
+    color: black
+
+  .col-1
+    padding-left: 30px
+    font-size: 18
+    font-style: italic
+    line-height: 1.8
+
+    &:first-child
+      padding-left: 0
+      padding-right: 30px
+      text-align: right
+      border-right: solid 2px black
+
+    @media (max-width: 640px)
+      padding: 0 10px
+
+      &:first-child
+        padding: 0 10px
+        text-align: left
+        border: none
+
+  a
+    color: black
+    text-decoration: underline
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+  p
+     margin: 0
+
+  .form-display
+    background: rgba(white, 0.5)
+    border: 3px solid white
+    box-shadow: 0px 3px 8px rgba(black, 0.3)
+    display: flex
+    margin: 50px 0
+
+    @media (max-width: 590px)
+      display: block
+
+    .mc-field-group
+      position: relative
+      flex: 2
+      &:first-child
+        border-right: 4px white solid
+
+        @media (max-width: 590px)
+          border-right: none
+          border-bottom: 4px white solid
+
+    input
+      position: relative
+      border: 0
+      background: none
+      padding: 0
+      display: block
+      height: 50px
+      width: 100%
+      padding: 0 10px
+      font-size: 18px
+
+      &.button
+        line-height: 0px
+        flex: 1
+        background: white
+        color: #f00c0c
+        font-size: 18px
+        font-weight: 300
+        text-transform: none
+        padding: 0 15px
+
+      &:focus
+        outline: none
+
+    label
+      position: absolute
+      z-index: 2
+      font-size: 12px
+      left: 5px
