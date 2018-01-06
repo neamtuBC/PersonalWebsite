@@ -1,3 +1,2 @@
-name: Tanar cu Dacie
-markdown: redcarpet
+name: Tanar cu ambitie
 exclude: ["node_modules", "gulpfile.js", "package.json"]
