@@ -1,0 +1,63 @@
+section.design
+  background:
+    image: url(../img/design-bg.jpg)
+    repeat: no-repeat
+    position: center
+  padding: 0px !important
+
+  .col-50
+    background-color: fade-out(black, 0.2)
+    &.behance
+      background-color: fade-out(white, 0.5)
+
+  .home-lead
+    text-align: center
+    color: white
+    margin-top: 35px
+    &.behance
+      color: black
+
+  .home-cta
+    color: black
+    margin-bottom: 35px
+    &.behance
+      background-color: black
+      color: white
+
+  .design-img-link
+    display: block
+    float: left
+    width: calc(50% - 10px)
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
+    margin: 5px
+    position: relative
+    opacity: 0
+    transition: all 300ms ease-in-out
+
+    &.is-visible
+      opacity: 1
+
+    .article-meta
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: fade-out(#f00c0c, 0.5)
+      color: white
+      opacity: 0
+      transition: all 200ms ease-in-out
+      .name
+        font-size: 18px
+        line-height: 1.2
+
+    img
+      width: 100%
+      display: block
+
+    &:hover .article-meta
+        opacity: 1
+
+  .cf
+    clear: both
+    margin-bottom: 20px

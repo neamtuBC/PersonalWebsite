@@ -1,0 +1,33 @@
+mixin design-img(image) 
+  a(href="").design-img-link
+    .article-meta
+      .name Article Name
+    img(src=image)
+
+
+section.design#design
+  .flex.flex--center
+    .col-50.flex.flex--center
+      .col-1
+        p.home-lead ...Postez pe Dribble...
+        +design-img('./assets/img/art3.jpg')
+        +design-img('./assets/img/art2.jpg')
+        +design-img('./assets/img/art1.jpg')
+        +design-img('./assets/img/art4.jpg')
+        +design-img('./assets/img/art5.jpg')
+        +design-img('./assets/img/art6.jpg')
+        .cf
+        a(href="").home-cta Vezi Dribble
+                
+    .col-50.flex.flex--center.behance
+      .col-1
+        p.home-lead.behance ..si pe Behance...
+        +design-img('./assets/img/art7.jpg')
+        +design-img('./assets/img/art5.jpg')
+        +design-img('./assets/img/art3.jpg')
+        +design-img('./assets/img/art4.jpg')
+        +design-img('./assets/img/art2.jpg')
+        +design-img('./assets/img/art1.jpg')
+        .cf
+        a(href="").home-cta.behance Vezi Behance
+              

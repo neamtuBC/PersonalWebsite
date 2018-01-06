@@ -980,6 +980,66 @@ section.articles {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1); } }
 
+section.design {
+  background-image: url(../img/design-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px !important; }
+  section.design .col-50 {
+    background-color: rgba(0, 0, 0, 0.8); }
+    section.design .col-50.behance {
+      background-color: rgba(255, 255, 255, 0.5); }
+  section.design .home-lead {
+    text-align: center;
+    color: white;
+    margin-top: 35px; }
+    section.design .home-lead.behance {
+      color: black; }
+  section.design .home-cta {
+    color: black;
+    margin-bottom: 35px; }
+    section.design .home-cta.behance {
+      background-color: black;
+      color: white; }
+  section.design .design-img-link {
+    display: block;
+    float: left;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    section.design .design-img-link.is-visible {
+      opacity: 1; }
+    section.design .design-img-link .article-meta {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(240, 12, 12, 0.5);
+      color: white;
+      opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+      section.design .design-img-link .article-meta .name {
+        font-size: 18px;
+        line-height: 1.2; }
+    section.design .design-img-link img {
+      width: 100%;
+      display: block; }
+    section.design .design-img-link:hover .article-meta {
+      opacity: 1; }
+  section.design .cf {
+    clear: both;
+    margin-bottom: 20px; }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;

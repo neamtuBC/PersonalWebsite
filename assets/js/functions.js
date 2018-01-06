@@ -64,6 +64,7 @@ $(window).scroll(function(){
   youtubeVidScroll();
   startMentoring();
   startArticles();
+  startDesign();
 });
 
 function youtubeVidScroll() {
@@ -78,6 +79,18 @@ function startArticles(){
     $('.article-thumb').each(function(i){
       setTimeout(function(){
         $('.article-thumb').eq(i).addClass('is-visible');
+      }, 100*i);
+    });
+  }
+}
+
+function startDesign(){
+  var wScroll = $(window).scrollTop();
+
+  if($('section.design').offset().top - $(window).height()/2 < wScroll){
+    $('.design-img-link').each(function(i){
+      setTimeout(function(){
+        $('.design-img-link').eq(i).addClass('is-visible');
       }, 100*i);
     });
   }
